@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 8%; /* #141414 */
+    --foreground: 0 0% 100%;
+
+    --card: 34 12% 16%; /* #222831 */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 34 12% 16%; /* #222831 */
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 204 100% 50%; /* #007bff */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 195 100% 50%; /* #00BFFF */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 204 100% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 204 100% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 34 12% 16%; /* #222831 */
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 204 100% 50%; /* #007bff */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 195 100% 50%; /* #00BFFF */
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 30%;
+    --sidebar-ring: 204 100% 50%;
+  }
+
+  .dark {
+    /* Dark mode can be slightly different if needed */
+    --background: 0 0% 5%;
+    --foreground: 0 0% 90%;
+
+    --card: 34 12% 12%;
+    --card-foreground: 0 0% 90%;
+
+    --popover: 34 12% 12%;
+    --popover-foreground: 0 0% 90%;
+
+    --primary: 204 100% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 195 100% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 204 100% 35%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 204 100% 45%;
+
+    --sidebar-background: 34 12% 12%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 204 100% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 195 100% 45%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 25%;
+    --sidebar-ring: 204 100% 45%;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#007bff] to-[#00BFFF];
+  }
+  
+  .bg-gradient {
+    @apply bg-gradient-to-r from-[#007bff] to-[#00BFFF];
+  }
+  
+  .box-bg {
+    @apply bg-[#222831];
+  }
+  
+  .body-bg {
+    @apply bg-[#141414];
+  }
+}
