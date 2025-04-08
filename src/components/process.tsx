@@ -66,7 +66,7 @@ const Process = () => {
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-gray-800 hover:border-red-500/30 transition-all duration-300"
             >
-              <div className="bg-red-500/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 text-red-500">
+              <div className="bg-secondary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6 text-red-500">
                 {step.icon}
               </div>
               <h3 className="text-xl font-bold text-white mb-4">{step.title}</h3>

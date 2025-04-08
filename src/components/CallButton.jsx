@@ -73,29 +73,22 @@ const CallButton = () => {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-900 to-black min-h-screen flex flex-col items-center justify-center">
 
-      {/* Animated Call Circle */}
-      <div className="relative cursor-pointer group" onClick={handleCall}>
-        {/* Outer pulsing circle */}
-        <div className={`absolute inset-0 rounded-full ${getButtonColor().replace('bg-', 'bg-')}/30 ${getAnimationClass()}`}></div>
+    <div className=" cursor-pointer group" onClick={handleCall}>
 
-        {/* Multiple ripple circles for calling/connecting state */}
-        {(state === 'calling' || state === 'connecting') && (
-          <>
-            <div className="absolute inset-[-10px] rounded-full bg-white/10 animate-ping-slow"></div>
-            <div className="absolute inset-[-5px] rounded-full bg-white/20 animate-ping-slow animation-delay-300"></div>
-          </>
-        )}
-
-        {/* Main circle */}
-        <div className={`relative flex items-center justify-center rounded-full ${getButtonColor()} w-32 h-32 shadow-lg transition-all duration-300 group-hover:scale-95`}>
-          <div className="rounded-full bg-gray-900 w-24 h-24 flex items-center justify-center">
-            {getButtonIcon()}
-          </div>
+      <div className={`inset-0 rounded-full ${getButtonColor().replace('bg-', 'bg-')}/30 ${getAnimationClass()}`}></div>
+      {(state === 'calling' || state === 'connecting') && (
+        <>
+          <div className="inset-[-10px] rounded-full bg-white/10 animate-ping-slow"></div>
+          <div className="inset-[-5px] rounded-full bg-white/20 animate-ping-slow animation-delay-300"></div>
+        </>
+      )}
+      <div className={`flex items-center justify-center rounded-full ${getButtonColor()} w-32 h-32 shadow-lg transition-all duration-300 group-hover:scale-95`}>
+        <div className="rounded-full bg-gray-900 w-24 h-24 flex items-center justify-center">
+          {getButtonIcon()}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
