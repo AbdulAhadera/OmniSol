@@ -113,7 +113,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-medium text-lg mb-1">Email Us</h3>
-                  <p className="text-gray-400">info@omnisolai.com</p>
+                  <p className="text-gray-400">info@omnisol.ai</p>
                 </div>
               </div>
             </div>

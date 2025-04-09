@@ -17,16 +17,33 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-black text-white">
 
-        <Navbar />
+      <Navbar />
+
+      <section id="hero">
         <Hero />
+      </section>
+
+      <section id="features">
         <Features />
-        <Process />
-        <AiDemo />
+      </section>
+
+      <Process />
+
+      {/* navLink to redirect on Page */}
+      <AiDemo />
+
+      <section id="integration">
         <Integrations />
-        <Testimonials />
-        <FAQ />
+      </section>
+
+      <Testimonials />
+      <FAQ />
+
+      <section id="contact">
         <Contact />
-        <Footer />
+      </section>
+
+      <Footer />
 
     </div>
   );

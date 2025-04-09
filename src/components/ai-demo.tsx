@@ -1,11 +1,17 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Headphones, Link, FileText, Mic } from "lucide-react";
+import { Bot, User } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const AiDemo = () => {
   const [message, setMessage] = useState("");
   const [isRecording, setIsRecording] = useState(false);
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate('ai/demo/free');
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -72,71 +78,40 @@ const AiDemo = () => {
               </div>
 
               <div className="h-64 overflow-y-auto bg-gray-900/50 rounded-lg p-4 mb-6 border border-gray-800">
-                <div className="flex gap-3 mb-4">
+                <div className="flex justify-start gap-3 mb-4">
                   <div className="bg-secondary/20 p-2 rounded-full h-8 w-8 flex items-center justify-center">
-                    <Headphones className="h-4 w-4 text-secondary" />
+                    <Bot className="h-4 w-4 text-secondary" />
                   </div>
                   <div className="bg-gray-800 rounded-lg p-3 text-gray-300 text-sm max-w-[80%]">
                     Hello! I'm your OmnisolAi assistant. How can I help you today?
                   </div>
                 </div>
+
+                <div className="flex justify-end gap-3 mb-4">
+                  <div className="bg-gray-800 rounded-lg p-3 text-gray-300 text-sm max-w-[80%]">
+                    I want to test your agents.
+                  </div>
+                  <div className="bg-secondary/20 p-2 rounded-full h-8 w-8 flex items-center justify-center">
+                    <User className="h-4 w-4 text-secondary" />
+                  </div>
+                </div>
+
+                <div className="flex justify-start gap-3 mb-4">
+
+                  <div className="bg-secondary/20 p-2 rounded-full h-8 w-8 flex items-center justify-center">
+                    <Bot className="h-4 w-4 text-secondary" />
+                  </div>
+
+                  <div className="bg-gray-800 rounded-lg p-3 text-gray-300 text-sm max-w-[80%]">
+                    Just Click on "Request Full Demo" button
+                  </div>
+                </div>
+                
               </div>
 
-              <div className="relative">
-                <form onSubmit={handleSubmit} className="flex gap-2">
-                  <input
-                    type="text"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Type your message here..."
-                    className="w-full bg-gray-900/80 border border-gray-800 rounded-lg py-3 px-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-red-500/50"
-                  />
-                  <button
-                    type="button"
-                    onClick={toggleRecording}
-                    className={`p-3 rounded-lg flex items-center justify-center ${isRecording
-                      ? "bg-red-500 text-white"
-                      : "bg-gray-800 text-gray-400 hover:bg-gray-700"
-                      }`}
-                  >
-                    <Mic className="h-5 w-5" />
-                  </button>
-                  <button
-                    type="submit"
-                    className="bg-secondary hover:bg-primary text-white p-3 rounded-lg"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="m5 12 14-9v18Z" />
-                    </svg>
-                  </button>
-                </form>
-              </div>
+
             </div>
 
-            <div className="bg-gray-900 p-3 border-t border-gray-800 flex justify-center gap-8">
-              <button className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
-                <Link className="h-5 w-5" />
-                <span className="text-sm">Link</span>
-              </button>
-              <button className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
-                <FileText className="h-5 w-5" />
-                <span className="text-sm">File</span>
-              </button>
-              <button className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
-                <Mic className="h-5 w-5" />
-                <span className="text-sm">Voice</span>
-              </button>
-            </div>
           </motion.div>
 
           <motion.div
@@ -235,17 +210,17 @@ const AiDemo = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="mt-8"
             >
-              <a
-                href="#contact"
+              <button
+                onClick={handleNavigation}
                 className="bg-gradient  hover:from-secondary hover:to-secondary text-white font-medium py-3 px-8 rounded-full inline-block transition-all duration-300 transform hover:scale-105"
               >
                 Request Full Demo
-              </a>
+              </button>
             </motion.div>
           </motion.div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };
 

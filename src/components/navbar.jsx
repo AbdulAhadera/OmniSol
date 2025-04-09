@@ -2,11 +2,21 @@ import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "/Logo.png"
-import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate('ai/demo/free');
+  };
+  const handleHomeNavigation= () => {
+    navigate('/');
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,16 +35,21 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
-    console.log(id); // Logs the id you're passing
+    console.log(isMenuOpen)
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      console.log(`Element with id "${id}" not found.`);
+      const offset = 80; // Adjust based on your header size (fixed navbar)
+      window.scrollTo({
+        top: element.getBoundingClientRect().top + window.pageYOffset - offset,
+        behavior: 'smooth',
+      });
     }
-    setIsMenuOpen(false);
   };
+
+
+
 
   return (
     <header
@@ -47,9 +62,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
 
           <div className="flex items-center">
-            <a href="#" onClick={() => scrollToSection('hero')} className="text-white font-bold text-xl flex items-center">
+            <button onClick={() => {
+              handleHomeNavigation();
+              scrollToSection('hero')
+            }
+            } className="text-white font-bold text-xl flex items-center">
               <img src={Logo} className="h-8" />
-            </a>
+            </button>
           </div>
 
           <div className="items-center gap-4 flex">
@@ -74,37 +93,37 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
             className=" min-h-screen justify-center bg-black/80 backdrop-blur-lg border-t border-white/10"
           >
-            <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-              <a
-                onClick={() => scrollToSection('hero')}
+            <div className="container text-center mx-auto px-4 py-4 flex flex-col space-y-4">
+              <Link
+                to="hero" smooth={true} duration={200}
                 className="text-white py-2 hover:text-secondary transition-colors cursor-pointer"
               >
                 Home
-              </a>
-              <a
-                onClick={() => scrollToSection('features')}
+              </Link>
+              <Link
+                to="features" smooth={true} duration={200}
                 className="text-white py-2 hover:text-secondary transition-colors cursor-pointer"
               >
                 Features
-              </a>
-              <a
-                onClick={() => scrollToSection('integrations')}
+              </Link>
+              <Link
+                to="integration" smooth={true} duration={500}
                 className="text-white py-2 hover:text-secondary transition-colors cursor-pointer"
               >
                 Industries
-              </a>
-              <a
-                onClick={() => scrollToSection('demo')}
+              </Link>
+              <button
+                onClick={handleNavigation}
                 className="text-white py-2 hover:text-secondary transition-colors cursor-pointer"
               >
                 AI Demo
-              </a>
-              <a
-                onClick={() => scrollToSection('contact')}
+              </button>
+              <Link
+                to="contact" smooth={true} duration={500}
                 className="bg-gradient text-white py-2 px-4 rounded-full text-center font-medium cursor-pointer"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}
