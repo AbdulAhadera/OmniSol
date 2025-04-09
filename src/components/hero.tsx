@@ -6,7 +6,6 @@ import { Spotlight } from "./ui/spotlight";
 const Hero = () => {
   return (
     <div
-      id="hero"
       className="relative min-h-screen flex overflow-hidden bg-black/[0.96] antialiased">
       <div
         className={cn(
@@ -36,10 +35,10 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="text-4xl md:text-6xl lg:text-6xl font-bold bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-transparent leading-tight mb-4"
         >
-          Streamline the future with
+          Integrate your business with
           <br />
           <span className="text-gradient mt-2">
-            Voice-Driven Intelligence
+            the most efficient phone assistant
           </span>
         </motion.h1>
 
@@ -49,9 +48,10 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto"
         >
-          Through our advanced AI technology, we empower businesses and hospitals
-          with revolutionary voice agents designed to enhance customer service, streamline
-          appointment bookings, and reduce operational costs.
+          Omnisol AI has appointed advanced AI-technology to revolutionize the business industry by
+          lowering costs of operation, streamlining the customer service industry, and making appointment
+          bookings easier than ever.
+
         </motion.p>
 
         <motion.div

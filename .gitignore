@@ -1,3 +1,7 @@
+# In your .gitignore file
+.env
+.env.local
+
 # Logs
 logs
 *.log

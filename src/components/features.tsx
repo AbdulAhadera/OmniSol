@@ -7,19 +7,19 @@ const features = [
     icon: <Headphones className="h-12 w-12 text-secondary" />,
     title: "Unlimited Calls",
     description:
-      "Never worry about call limits. OmnisolAi's Voice Intelligence Agents handle unlimited calls, ensuring you never miss an opportunity.",
+      "At Omnisol Ai, we offer our clients unlimited calling so that you never miss another chance to expand your business.",
   },
   {
     icon: <ShieldCheck className="h-12 w-12 text-secondary" />,
     title: "Highly Compliant",
     description:
-      "Our systems are compliant with all major privacy regulations, keeping your patient and customer data secure at all times.",
+      "At Omnisol Ai, we offer our clients unlimited calling so that you never miss another chance to expand your business.",
   },
   {
     icon: <Users className="h-12 w-12 text-secondary" />,
     title: "Custom Personalities",
     description:
-      "Choose from thousands of personalities for your voice agents, from professional to friendly, to match your brand identity perfectly.",
+      "With thousands of voice agent personalities available, you can set the tone of your business through your virtual assistant.",
   },
 ];
 
@@ -79,8 +79,8 @@ const Features = () => {
             }}
             className="text-lg text-gray-400 max-w-3xl"
           >
-            Free yourself from the limits of traditional staffing. Embrace the AI renaissance with our
-            scalable voice intelligence solutions.
+            Leave traditional staffing in the past and enter into the world of AI, where expansive voice
+            intelligence offers solutions to modern day problems.
           </motion.p>
         </motion.div>
 

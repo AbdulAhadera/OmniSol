@@ -13,20 +13,21 @@ import Integrations from "@/components/integrations";
 const Index = () => {
 
   const isMobile = useIsMobile();
-  
+
   return (
     <div className="min-h-screen bg-black text-white">
 
-      <Navbar/>
-      <Hero />
-      <Features />
-      <Process />
-      <AiDemo />
-      <Integrations />
-      <Testimonials />
-      <FAQ />
-      <Contact />
-      <Footer />
+        <Navbar />
+        <Hero />
+        <Features />
+        <Process />
+        <AiDemo />
+        <Integrations />
+        <Testimonials />
+        <FAQ />
+        <Contact />
+        <Footer />
+
     </div>
   );
 };

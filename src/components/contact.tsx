@@ -63,7 +63,7 @@ const Contact = () => {
               >
                 <span className="text-secondary">GET IN TOUCH</span>
               </motion.div>
-              
+
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -71,9 +71,9 @@ const Contact = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
               >
-                Ready to Transform Your Business?
+                Transform your business today!
               </motion.h2>
-              
+
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -81,8 +81,9 @@ const Contact = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="text-lg text-gray-400 mb-8"
               >
-                Contact us today to learn how OmnisolAi's voice intelligence solutions can streamline your operations and enhance customer experience.
-              </motion.p>
+                Speak with us today to discuss how Omnisol AI can expand your business and streamline your
+                operations
+                 </motion.p>
             </div>
 
             <div className="space-y-6">
@@ -92,7 +93,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-medium text-lg mb-1">Our Location</h3>
-                  <p className="text-gray-400">123 AI Innovation Boulevard<br />San Francisco, CA 94103</p>
+                  <p className="text-gray-400">2055 Craigshire Rd,<br />Suite 410, St. Louis, MO 63146</p>
                 </div>
               </div>
 
@@ -102,7 +103,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-medium text-lg mb-1">Call Us</h3>
-                  <p className="text-gray-400">+1 628 266 4233</p>
+                  <p className="text-gray-400">414-970-2115</p>
                 </div>
               </div>
 
@@ -151,7 +152,7 @@ const Contact = () => {
             ) : (
               <form onSubmit={handleSubmit}>
                 <h3 className="text-2xl font-bold text-white mb-6">Send us a message</h3>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="name" className="block text-gray-400 mb-2">
@@ -168,7 +169,7 @@ const Contact = () => {
                       placeholder="John Doe"
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="email" className="block text-gray-400 mb-2">
                       Email Address
@@ -201,7 +202,7 @@ const Contact = () => {
                       placeholder="+1 (555) 123-4567"
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="company" className="block text-gray-400 mb-2">
                       Company Name
@@ -237,9 +238,8 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full bg-gradient hover:from-primary hover:to-secondary text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 ${
-                    isSubmitting ? "opacity-70 cursor-not-allowed" : ""
-                  }`}
+                  className={`w-full bg-gradient hover:from-primary hover:to-secondary text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""
+                    }`}
                 >
                   {isSubmitting ? (
                     <span className="flex items-center justify-center">

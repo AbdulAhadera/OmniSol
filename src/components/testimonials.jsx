@@ -59,7 +59,7 @@ const Testimonials = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-lg text-gray-400 max-w-3xl"
           >
-            Discover how OmnisolAi's voice intelligence solutions are transforming businesses across industries.
+            How Omnisol AI is revolutionizing businesses across all industries, all over the world.
           </motion.p>
         </div>
 

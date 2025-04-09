@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import ThemeSwitcher from "./theme-switcher";
 import { Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "/Logo.png"
+import { useContext } from 'react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,13 +23,15 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    console.log("Hello");
   };
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
+    console.log(id); // Logs the id you're passing
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.log(`Element with id "${id}" not found.`);
     }
     setIsMenuOpen(false);
   };
@@ -44,17 +46,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
 
-
           <div className="flex items-center">
             <a href="#" onClick={() => scrollToSection('hero')} className="text-white font-bold text-xl flex items-center">
               <img src={Logo} className="h-8" />
             </a>
           </div>
 
-         
-
           <div className="items-center gap-4 flex">
-
             <button
               className="text-white p-2 focus:outline-none"
               onClick={toggleMenu}
@@ -63,8 +61,6 @@ const Navbar = () => {
               <Menu className="h-6 w-6" />
             </button>
           </div>
-
-
         </div>
       </div>
 
@@ -89,7 +85,7 @@ const Navbar = () => {
                 onClick={() => scrollToSection('features')}
                 className="text-white py-2 hover:text-secondary transition-colors cursor-pointer"
               >
-                Services
+                Features
               </a>
               <a
                 onClick={() => scrollToSection('integrations')}
@@ -102,12 +98,6 @@ const Navbar = () => {
                 className="text-white py-2 hover:text-secondary transition-colors cursor-pointer"
               >
                 AI Demo
-              </a>
-              <a
-                onClick={() => scrollToSection('about')}
-                className="text-white py-2 hover:text-secondary transition-colors cursor-pointer"
-              >
-                About
               </a>
               <a
                 onClick={() => scrollToSection('contact')}

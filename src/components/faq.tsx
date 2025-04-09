@@ -10,28 +10,28 @@ type FaqItemType = {
 
 const faqs: FaqItemType[] = [
   {
-    question: "How does the OmnisolAi voice assistant work?",
-    answer: "OmnisolAi uses advanced natural language processing and machine learning to create voice agents that can understand and respond to human speech naturally. Our technology enables these agents to handle complex conversations, answer questions, schedule appointments, and perform various tasks without human intervention."
+    question: "How does Omnisol AI’s voice assistant function?",
+    answer: "We utilize machine learning combined with advanced natural language that gives our assistants the ability to hold human-like conversations. This allows assistants to hold detailed conversations, ask and answer questions, and perform other functions as naturally as possible."
   },
   {
-    question: "Will callers know they're speaking with an AI?",
-    answer: "Our voice agents are designed to sound natural and human-like. While we recommend transparency about using AI technology, many customers report that callers can't tell they're interacting with an AI assistant due to the natural flow of conversation and realistic voice patterns."
+    question: "Will callers know they're speaking to AI?",
+    answer: "Although we encourage transparency about AI, many clients have reported that their callers can't tell that they're talking to an AI assistant. This is because our assistants understand the flow of conversation, can recognize voice patterns, and are designed to sound human-like."
   },
   {
-    question: "How long does implementation take?",
-    answer: "Implementation time varies based on your specific needs and integration requirements. Typically, our basic setup can be completed in 1-2 weeks, while more complex integrations may take 3-4 weeks. Our team works closely with you throughout the process to ensure a smooth transition."
+    question: "How long does integration take?",
+    answer: "It typically takes 1 to 2 weeks for a basic setup to be completed while it may take 3 to 4 weeks for more complex integrations. Our team communicates with you throughout the entire process to ensure that they process is as seamless as possible."
   },
   {
-    question: "Is my data secure with OmnisolAi?",
-    answer: "Absolutely. We prioritize data security and compliance. OmnisolAi is fully HIPAA compliant for healthcare applications and adheres to strict data protection standards across all industries. Your data is encrypted both in transit and at rest, and we implement comprehensive security measures to protect all information."
+    question: "Is my data secure with Omnisol AI?",
+    answer: "Yes! We are fully compliant with HIPAA and follow very strict data protection standards to ensure that your data is fully encrypted and your information is well protected."
   },
   {
-    question: "Can I customize the voice and personality of my AI assistant?",
-    answer: "Yes, you can choose from a wide range of voices, accents, and personalities for your AI assistant. We offer options to match your brand identity and customer preferences. For enterprise clients, we even offer voice cloning services to create a unique voice for your brand."
+    question: "Can I customize my AI assistant's voice and personality?",
+    answer: "Absolutely! There are countless choices available for personalities, voices, and accents to ensure that your assistant represents your business as accurately as possible. Voice cloning services are also available."
   },
   {
-    question: "What types of businesses benefit most from OmnisolAi?",
-    answer: "While our technology benefits businesses across many sectors, we've seen particularly strong results in healthcare (appointment scheduling, patient follow-ups), customer service operations, sales departments, and service-based businesses that handle high call volumes for bookings and inquiries."
+    question: "Which businesses benefit the most from Omnisol AI?",
+    answer: "Businesses across all sectors benefit from our software. Although, customer service operations, sales departments, and service-based businesses with high call volumes have been found to benefit the most."
   }
 ];
 
@@ -55,7 +55,7 @@ const FAQ = () => {
           >
             <span className="text-secondary">FAQs</span>
           </motion.div>
-          
+
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ const FAQ = () => {
           >
             Frequently Asked Questions
           </motion.h2>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ const FAQ = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-lg text-gray-400 max-w-3xl mx-auto"
           >
-            Get answers to common questions about our voice intelligence solutions.
+            Get answers to common questions about our software.
           </motion.p>
         </div>
 

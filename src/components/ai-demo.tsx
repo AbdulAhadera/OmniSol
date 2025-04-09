@@ -30,7 +30,7 @@ const AiDemo = () => {
           >
             <span className="text-secondary ">EXPERIENCE OUR TECHNOLOGY</span>
           </motion.div>
-          
+
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -38,9 +38,9 @@ const AiDemo = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
           >
-            Try Our AI Demo Call
+            Try a Free Demo Call Today!
           </motion.h2>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -48,12 +48,13 @@ const AiDemo = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-lg text-gray-400 max-w-3xl"
           >
-            Experience the power of our voice intelligence technology firsthand. Interact with our demo to see how OmnisolAi can transform your customer interactions.
+            Let us give you a glimpse of how our software can transform your customer interactions through
+            the use of our powerful technology.
           </motion.p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-         
+
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -93,11 +94,10 @@ const AiDemo = () => {
                   <button
                     type="button"
                     onClick={toggleRecording}
-                    className={`p-3 rounded-lg flex items-center justify-center ${
-                      isRecording
-                        ? "bg-red-500 text-white"
-                        : "bg-gray-800 text-gray-400 hover:bg-gray-700"
-                    }`}
+                    className={`p-3 rounded-lg flex items-center justify-center ${isRecording
+                      ? "bg-red-500 text-white"
+                      : "bg-gray-800 text-gray-400 hover:bg-gray-700"
+                      }`}
                   >
                     <Mic className="h-5 w-5" />
                   </button>
@@ -167,9 +167,10 @@ const AiDemo = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium text-white mb-2">Natural Conversations</h4>
+                  <h4 className="text-lg font-medium text-white mb-2">Human-Like Conversations</h4>
                   <p className="text-gray-400">
-                    Our AI understands context, nuance, and can handle complex conversations just like a human representative.
+                    Our software can hold complex conversations while
+                    understanding nuance and context just like a human.
                   </p>
                 </div>
               </div>
@@ -192,9 +193,10 @@ const AiDemo = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium text-white mb-2">24/7 Availability</h4>
+                  <h4 className="text-lg font-medium text-white mb-2">Around The Clock Availability</h4>
                   <p className="text-gray-400">
-                    Our voice agents never sleep, ensuring your customers receive support around the clock without increasing your staffing costs.
+                    Our voice agent is available 24/7, even after business
+                    hours, to ensure that you satisfy customers without splurging on staffing costs.
                   </p>
                 </div>
               </div>
@@ -217,9 +219,10 @@ const AiDemo = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium text-white mb-2">Seamless Booking</h4>
+                  <h4 className="text-lg font-medium text-white mb-2">Painless Booking</h4>
                   <p className="text-gray-400">
-                    Schedule appointments, handle inquiries, and process routine tasks without human intervention.
+                    Complete routine tasks such as appointment booking and
+                    rescheduling without the intervention of a human.
                   </p>
                 </div>
               </div>

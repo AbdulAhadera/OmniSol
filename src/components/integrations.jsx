@@ -56,7 +56,7 @@ const Integrations = () => {
           >
             <span className="text-secondary">INTEGRATIONS</span>
           </motion.div>
-          
+
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -64,9 +64,9 @@ const Integrations = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
           >
-            20,104+ Integration Support
+            Integration Support- Over 20,104 Available
           </motion.h2>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +74,8 @@ const Integrations = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-lg text-gray-400 max-w-3xl"
           >
-            Connect OmnisolAi with your existing software ecosystem to create seamless workflows and maximize efficiency.
+            Omnisol AI integrates with your current software to seamlessly connect workflows and increase
+            efficiency.
           </motion.p>
         </div>
 
@@ -104,10 +105,12 @@ const Integrations = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-white mb-2">Seamless Integration</h3>
-            <p className="text-gray-400">Connect our AI voice agents with your existing CRM, ERP, and scheduling systems without disruption.</p>
+            <h3 className="text-xl font-semibold text-white mb-2">Flawless Integration</h3>
+            <p className="text-gray-400">Connect your existing CRM, ERP, and scheduling systems to our software
+              without the hassle.
+            </p>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -121,9 +124,11 @@ const Integrations = () => {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Data Synchronization</h3>
-            <p className="text-gray-400">Real-time synchronization ensures all customer information and interactions remain up-to-date across platforms.</p>
+            <p className="text-gray-400">Customer interactions and information will be up-to-date at all times
+              across platforms.
+            </p>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -137,7 +142,8 @@ const Integrations = () => {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">API Access</h3>
-            <p className="text-gray-400">Custom API endpoints allow developers to create unique integrations specific to your business needs.</p>
+            <p className="text-gray-400">Your business will have unique integrations that meet your business needs with the
+            help of custom API endpoints.</p>
           </motion.div>
         </div>
       </div>

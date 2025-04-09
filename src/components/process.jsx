@@ -7,17 +7,17 @@ const Process = () => {
     {
       icon: <FileStack className="h-8 w-8" />,
       title: "Step 1: Strategy",
-      description: "We begin with a comprehensive strategy session to understand your business needs and objectives."
+      description: "Our team meets with you in order to better understand your business’ needs."
     },
     {
       icon: <Zap className="h-8 w-8" />,
-      title: "Step 2: Acceleration",
-      description: "Our team develops a tailored plan to enhance your business operations and guarantee measurable results."
+      title: "Step 2: Development",
+      description: "To streamline your operations, we personalize a plan to ensure that you can see measurable results."
     },
     {
       icon: <CircleCheck className="h-8 w-8" />,
       title: "Step 3: Implementation",
-      description: "We rapidly deploy your voice intelligence solution, giving you an immediate competitive edge."
+      description: "Get a headstart on your competition as soon as your software is installed and running!  "
     }
   ];
 
@@ -25,6 +25,17 @@ const Process = () => {
     <section className="py-24 bg-gradient-to-b from-black to-gray-900">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center text-center mb-16">
+
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
+          >
+            How it Works
+          </motion.h2>
+
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -34,7 +45,7 @@ const Process = () => {
           >
             <span className="text-secondary">Our Process</span>
           </motion.div>
-          
+
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -42,9 +53,9 @@ const Process = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
           >
-            OmnisolAi as Your Revolutionary Solution
+            Omnisol AI Revolutionizes Your Business
           </motion.h2>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +63,7 @@ const Process = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-lg text-gray-400 max-w-3xl"
           >
-            Experience the future where limitations disappear. Our streamlined process ensures a seamless transition to voice-powered excellence.
+            Your business’ future is limitless with the help of our advanced software.
           </motion.p>
         </div>
 
