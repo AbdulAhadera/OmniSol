@@ -28,8 +28,6 @@ const Index = () => {
       </section>
 
       <Process />
-
-      {/* navLink to redirect on Page */}
       <AiDemo />
 
       <section id="integration">

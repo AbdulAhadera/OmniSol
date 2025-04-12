@@ -14,6 +14,7 @@ const Navbar = () => {
   const handleNavigation = () => {
     navigate('ai/demo/free');
   };
+  
   const handleHomeNavigation= () => {
     navigate('/');
   };

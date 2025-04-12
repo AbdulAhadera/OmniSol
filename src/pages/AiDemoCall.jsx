@@ -27,7 +27,7 @@ function AiDemoCall() {
           </div>
 
           <div className="w-full lg:w-1/2 px-2 text-center">
-            <h3 className="text-2xl md:text-2xl font-bold text-white">Precsion Labs</h3>
+            <h3 className="text-2xl md:text-2xl font-bold text-white">Precision Labs</h3>
             <p className="text-sm text-gray-400 mt-2">Precision Labs' AI calling agent provides information on tests, pricing, and scheduling.</p>
           </div>
         </motion.div>
@@ -63,10 +63,6 @@ function AiDemoCall() {
             <p className="text-sm text-gray-400 mt-2">Glow & Grace Salon's AI calling agent provides booking details, service information, and pricing.</p>
           </div>
         </motion.div>
-
-
-
-
 
       </section>
 
