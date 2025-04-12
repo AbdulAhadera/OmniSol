@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from '../components/navbar';
+import NavbarCopy from '../components/navbarCopy';
 import Footer from '../components/footer';
 import { useNavigate } from 'react-router-dom';
 
@@ -95,7 +95,7 @@ function Form() {
 
   return (
     <div className="bg-black text-white flex flex-col px-4">
-      <Navbar />
+      <NavbarCopy />
 
       <section className='flex py-24 justify-center min-h-screen text-white'>
 

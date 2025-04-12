@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import BeautySalonAgent from '../components/BeautySalonAgent';
 import PrecisionLabsAgent from '../components/PercisionLabsAgent';
 import AllStarAgent from '../components/AllStarAgent';
+import NavbarCopy from '../components/navbarCopy';
 
 
 function AiDemoCall() {
@@ -12,7 +13,7 @@ function AiDemoCall() {
   return (
     <div className="min-h-screen bg-black text-white">
 
-      <Navbar />
+      <NavbarCopy />
 
       <section className="py-24 block md:flex w-full justify-evenly px-10">
 
