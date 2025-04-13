@@ -76,8 +76,7 @@ function Form() {
     if (formValid) {
 
       e.preventDefault()
-      const url = "https://script.google.com/macros/s/AKfycbw3K8X40zEMBOwRDDj3AinpoDc4Loig88X6kuAJeifrfbqnvKz7DBOnh8q7i63C8jqs5A/exec"
-
+      const url = import.meta.env.VITE_APP_SHEET_URL;
 
       fetch(url, {
         method: "POST",
@@ -91,7 +90,7 @@ function Form() {
 
     }
 
-  };
+};
 
   return (
     <div className="bg-black text-white flex flex-col px-4">

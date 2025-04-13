@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Phone, Loader, PhoneOff } from 'lucide-react';
 import Vapi from '@vapi-ai/web'; 
 
-const vapi = new Vapi("a6d00dba-14d2-4800-9d0e-23f6e5ca0533"); 
+
+const vapiURL= import.meta.env.VITE_APP_VAPI_API_KEY;
+const vapi = new Vapi(vapiURL);
 
 const PrecisionLabsAgent = () => {
   const [state, setState] = useState('idle'); 
