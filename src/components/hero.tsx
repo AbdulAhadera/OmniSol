@@ -48,9 +48,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto"
         >
-          Omnisol AI has appointed advanced AI-technology to revolutionize the business industry by
-          lowering costs of operation, streamlining the customer service industry, and making appointment
-          bookings easier than ever.
+          Omnisol AI has deployed cutting-edge AI technology to transform the business sector by
+          reducing operational costs, enhancing customer service efficiency, and simplifying appointment 
+          scheduling like never before.
 
         </motion.p>
 
