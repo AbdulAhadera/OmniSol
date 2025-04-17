@@ -2,8 +2,16 @@
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Spotlight } from "./ui/spotlight";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+
+  const navigate = useNavigate();
+  
+    const handleNavigation = () => {
+      navigate('ai/demo/free');
+    };
+
   return (
     <div
       className="relative min-h-screen flex overflow-hidden bg-black/[0.96] antialiased">
@@ -51,7 +59,6 @@ const Hero = () => {
           Omnisol AI has deployed cutting-edge AI technology to transform the business sector by
           reducing operational costs, enhancing customer service efficiency, and simplifying appointment 
           scheduling like never before.
-
         </motion.p>
 
         <motion.div
@@ -60,12 +67,12 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 1.1 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <a
-            href="#demo"
+          <button
+             onClick={handleNavigation}
             className=" bg-gradient hover:from-primary hover:to-secondary text-white font-medium py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105"
           >
             Get Started
-          </a>
+          </button>
           <a
             href="#features"
             className="bg-white/10 backdrop-blur-md text-white font-medium py-3 px-8 rounded-full border border-white/20 hover:bg-white/20 transition-all duration-300"
