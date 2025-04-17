@@ -36,7 +36,6 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     console.log(isMenuOpen)
@@ -48,8 +47,6 @@ const Navbar = () => {
       });
     }
   };
-
-
 
 
   return (

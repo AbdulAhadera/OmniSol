@@ -26,7 +26,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="inline-block bg-secondary/20 backdrop-blur-sm rounded-full px-4 py-1 mb-8 border border-secondary/20"
         >
-          <span className="text-secondary">The Future Is Here.</span>
+          <span className="text-secondary">The Future Is Here</span>
         </motion.div>
 
         <motion.h1
